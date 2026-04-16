@@ -23,7 +23,12 @@ body {
   font-family: var(--font);
   font-weight: 300;
   color: var(--black);
-  background: var(--white);
+  background-color: var(--white);
+  background-image:
+    radial-gradient(circle, rgba(0,0,0,0.04) 1px, transparent 1px),
+    radial-gradient(circle, rgba(0,0,0,0.025) 1px, transparent 1px);
+  background-size: 24px 24px, 12px 12px;
+  background-position: 0 0, 6px 6px;
   line-height: 1.6;
   overflow-x: hidden;
 }
