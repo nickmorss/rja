@@ -3,46 +3,280 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello World</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f9f9f9;
-      color: #1a1a1a;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-
-    .container {
-      text-align: center;
-      padding: 2rem;
-    }
-
-    h1 {
-      font-size: 3rem;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      font-size: 1.1rem;
-      color: #666;
-    }
-  </style>
+  <title>Roxane Jessi</title>
+  <meta name="description" content="Roxane Jessi — Author, adventurer and global citizen. Follow her journey through seven Burning Man events on five continents.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Hello, World!</h1>
-    <p>Welcome to my website.</p>
-  </div>
+
+  <!-- ── HEADER ── -->
+  <header id="site-header" class="is-transparent">
+    <div class="header-inner">
+      <div class="site-title"><a href="index.html">Roxane Jessi</a></div>
+
+      <nav class="header-nav" aria-label="Main navigation">
+
+        <div class="nav-item">
+          <a href="https://www.amazon.com/dp/1734965940" target="_blank" class="nav-link">Get the book</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="index.html" class="nav-link active">Home</a>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <span class="nav-link">About the Book</span>
+          <div class="dropdown">
+            <a href="about.html">Overview and Updates</a>
+            <a href="about-me.html">About the Author</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <span class="nav-link">Burn Galleries</span>
+          <div class="dropdown">
+            <a href="painting-gallery.html">Paintings</a>
+            <a href="gallery-fuegoaustral.html">Fuego Austral</a>
+            <a href="gallery-afrikaburn.html">Afrikaburn</a>
+            <a href="gallery-midburn.html">Midburn</a>
+            <a href="gallery-nowhere.html">Nowhere</a>
+            <a href="gallery-burning-japan.html">Burning Japan</a>
+            <a href="gallery-blazing-swan.html">Blazing Swan</a>
+            <a href="gallery-brc-nevada.html">BRC Nevada</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="follow-my-adventures.html" class="nav-link">Burn Adventures Blog</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <div class="header-social">
+          <a href="https://www.facebook.com/roxane.b.9" target="_blank" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com/roxanejessiauthor" target="_blank" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </a>
+        </div>
+
+      </nav>
+
+      <button class="burger" id="burger-btn" aria-label="Open menu">
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── MOBILE NAV ── -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">&times;</button>
+    <a href="https://www.amazon.com/dp/1734965940" target="_blank">Get the book</a>
+    <a href="index.html">Home</a>
+    <span class="mobile-folder-title">About the Book</span>
+    <a href="about.html" class="sub-link">Overview and Updates</a>
+    <a href="about-me.html" class="sub-link">About the Author</a>
+    <span class="mobile-folder-title">Burn Galleries</span>
+    <a href="painting-gallery.html" class="sub-link">Paintings</a>
+    <a href="gallery-fuegoaustral.html" class="sub-link">Fuego Austral</a>
+    <a href="gallery-afrikaburn.html" class="sub-link">Afrikaburn</a>
+    <a href="gallery-midburn.html" class="sub-link">Midburn</a>
+    <a href="gallery-nowhere.html" class="sub-link">Nowhere</a>
+    <a href="gallery-burning-japan.html" class="sub-link">Burning Japan</a>
+    <a href="gallery-blazing-swan.html" class="sub-link">Blazing Swan</a>
+    <a href="gallery-brc-nevada.html" class="sub-link">BRC Nevada</a>
+    <a href="follow-my-adventures.html">Burn Adventures Blog</a>
+    <a href="contact.html">Contact</a>
+    <div class="mobile-social">
+      <a href="https://www.facebook.com/roxane.b.9" target="_blank" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="https://instagram.com/roxanejessiauthor" target="_blank" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image: url('https://images.squarespace-cdn.com/content/v1/6287a3382c4e8850644e95fe/1684969564629-SX5YDXEC9A51FCW12NWT/Afrikaburn+23-19.jpg')"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Burning Man &bull; 7 Events &bull; 5 Continents</p>
+      <h1 class="hero-title">Exploring Community<br>in a Disconnected World</h1>
+      <p class="hero-sub">Roxane Jessi — author, adventurer, and global citizen — set out to experience seven Burning Man events firsthand, seeking the culture that creates community where none exists.</p>
+      <a href="follow-my-adventures.html" class="btn-outline-white">Follow the Adventures</a>
+    </div>
+  </section>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main>
+    <div class="page-wrap">
+
+      <!-- Intro -->
+      <section class="home-intro">
+        <h2>"These communities are creating something the world desperately needs."</h2>
+        <p>Having spent a career working on Congolese police reform, Iraq counterterrorism, and women's rights in Africa, Roxane Jessi has witnessed firsthand how broken communities can become — and what it takes to rebuild them.</p>
+        <p>In 2018 she set out on a different kind of mission: to travel to seven Burning Man events across the globe, from the Nevada desert to the Israeli Negev, the Australian Outback to the Spanish Monegros, in search of the communities rewriting the rules of human connection.</p>
+      </section>
+
+      <!-- Book section -->
+      <section class="book-section">
+        <div class="book-text">
+          <h2>The Book</h2>
+          <p>Part travel memoir, part social inquiry — Roxane's book chronicles her journey through the world's Burning Man Regional events, exploring how thousands of people are building radical communities in some of the most unforgiving environments on earth.</p>
+          <p>From the dusty shores of the Negev Desert at Midburn to the eucalyptus forests of Western Australia at Blazing Swan, each event offers a window into a culture determined to reimagine the world from the ground up.</p>
+          <a href="https://www.amazon.com/dp/1734965940" target="_blank" class="btn-primary">Get the Book on Amazon</a>
+        </div>
+        <div class="book-image">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/6287a3382c4e8850644e95fe/1667043716853-JCPAZ464Y39BHCW5MDNS/E8CD48BD-F7A6-44E1-835B-D7EA23BA2BF6.JPG"
+            alt="Midburn — one of seven Burning Man events Roxane attended"
+            loading="lazy">
+        </div>
+      </section>
+
+      <!-- Featured posts -->
+      <section class="featured-section">
+        <p class="section-label">Latest from the Blog</p>
+        <div class="posts-grid">
+
+          <article class="post-card">
+            <div class="post-card-img">
+              <a href="follow-my-adventures.html">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/6287a3382c4e8850644e95fe/1771849731426-VJS5I3UTNL1PYAG1OTYF/frontage-deco-03-scaled.jpg?format=750w"
+                  alt="Burners Without Borders at 20"
+                  loading="lazy">
+              </a>
+            </div>
+            <p class="post-date">February 23, 2026</p>
+            <h3><a href="follow-my-adventures.html">Burners Without Borders at 20: What's Next &amp; How to Get Involved</a></h3>
+            <p>In 2025, we celebrate the 20-year anniversary of Burners Without Borders (BWB), which supports social and community development projects around the world.</p>
+            <a href="follow-my-adventures.html" class="read-more">Read More</a>
+          </article>
+
+          <article class="post-card">
+            <div class="post-card-img">
+              <a href="follow-my-adventures.html">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/6287a3382c4e8850644e95fe/1771849922760-P773J5FDR3139B4FBI5C/IMG_2530%2B2.jpg?format=750w"
+                  alt="BWB Colombia"
+                  loading="lazy">
+              </a>
+            </div>
+            <p class="post-date">December 29, 2024</p>
+            <h3><a href="follow-my-adventures.html">Of paramos, cities and deserts — BWB Colombia</a></h3>
+            <p>I travel to Colombia, a country so colorful, heart-stoppingly beautiful and dynamic, but still plagued by varying levels of instability and social injustice.</p>
+            <a href="follow-my-adventures.html" class="read-more">Read More</a>
+          </article>
+
+          <article class="post-card">
+            <div class="post-card-img">
+              <a href="follow-my-adventures.html">
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/6287a3382c4e8850644e95fe/1726082072806-I1EHKKJ4IXFCZEYDE0SS/IMG_7480.jpg?format=750w"
+                  alt="BRC 2024"
+                  loading="lazy">
+              </a>
+            </div>
+            <p class="post-date">September 12, 2024</p>
+            <h3><a href="follow-my-adventures.html">It was better this year! — BRC 2024</a></h3>
+            <p>It's been barely a week since I exited the dusty gates, and my days and nights are still filled with playa dreams.</p>
+            <a href="follow-my-adventures.html" class="read-more">Read More</a>
+          </article>
+
+        </div>
+      </section>
+
+    </div><!-- /.page-wrap -->
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <div class="newsletter">
+        <h2 class="newsletter-heading">Don't miss out.</h2>
+        <p class="newsletter-desc">Get updates on book launch and pre-orders, Burning Man events around the world, and more.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <div class="name-row">
+            <input type="text" name="fname" placeholder="First Name" maxlength="30" autocomplete="given-name">
+            <input type="text" name="lname" placeholder="Last Name" maxlength="30" autocomplete="family-name">
+          </div>
+          <input type="email" name="email" placeholder="Email Address" autocomplete="email" required>
+          <button type="submit" class="newsletter-submit">Sign Up</button>
+          <p class="newsletter-footnote">We respect your privacy.</p>
+        </form>
+      </div>
+      <div class="footer-links-col">
+        <h4>About Roxane Jessi</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Roxane Jessi</span>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/roxane.b.9" target="_blank" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://instagram.com/roxanejessiauthor" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Transparent → solid header on scroll
+    const header = document.getElementById('site-header');
+    function updateHeader() {
+      if (window.scrollY > 20) {
+        header.classList.replace('is-transparent', 'is-solid');
+      } else {
+        header.classList.replace('is-solid', 'is-transparent');
+      }
+    }
+    window.addEventListener('scroll', updateHeader, { passive: true });
+    updateHeader();
+
+    // Mobile menu
+    const burgerBtn = document.getElementById('burger-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+    const mobileClose = document.getElementById('mobile-nav-close');
+
+    burgerBtn.addEventListener('click', () => {
+      mobileNav.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+
+    function closeMobileNav() {
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    mobileClose.addEventListener('click', closeMobileNav);
+    mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMobileNav));
+  </script>
+
 </body>
 </html>
